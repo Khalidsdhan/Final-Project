@@ -1,28 +1,23 @@
-applyLegalActionForTaxEvasion __ TaxReportsService 
+Put - applyLegalActionForTaxEvasion __ TaxReportsService 
 
-applyTwoMonthLatePenalty __ TaxReportsService 
+Put - applyTwoMonthLatePenalty __ TaxReportsService 
 
-applyLegalActionForTaxEvasion __ TaxReportsService 
+Put - applyLegalActionForTaxEvasion __ TaxReportsService 
 
- approveTaxReportStatus       __ AuditorService 
+Put - approveTaxReportStatus       __ AuditorService 
 
-rejectTaxReportStatus __ AuditorService 
+Put - rejectTaxReportStatus __ AuditorService 
 
+Put -bulkApproveReports        __ TaxReportsService 
 
-bulkApproveReports        __ TaxReportsService 
-
- getLatestReportByAuditor       __ TaxReportsService 
- 
-
- changeTaxReportStatus      __ TaxReportsService  
-           
+Get - getLatestReportByAuditor       __ TaxReportsService        
             
-getUnpaidDueTaxReports __ TaxReportsService 
+Get -getUnpaidDueTaxReports __ TaxReportsService 
 
-getProductsByBarcode __ ProductService
+Get -getProductsByBarcode __ ProductService
 
-getReportsByAuditor        __ TaxReportsService 
+Get -getReportsByAuditor        __ TaxReportsService 
         
-getReportCountByStatus   __ TaxReportsService 
+Get -getReportCountByStatus   __ TaxReportsService 
 
-getUnapprovedTaxReports        __ TaxReportsService 
+Get -getUnapprovedTaxReports        __ TaxReportsService 
